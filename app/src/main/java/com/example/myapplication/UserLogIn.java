@@ -112,7 +112,7 @@ public class UserLogIn extends AppCompatActivity {
                                     sessionManager.createSession(email);
 
 
-                                    Intent se = new Intent(UserLogIn.this,MainActivity.class);
+                                    Intent se = new Intent(UserLogIn.this,Dashboard.class);
                                     startActivity(se);
 
                                     loading.setVisibility(View.GONE);
@@ -124,6 +124,8 @@ public class UserLogIn extends AppCompatActivity {
                             btn_login.setVisibility(View.VISIBLE);
                             Toast.makeText(UserLogIn.this, "Error"+ e.toString(),
                                     Toast.LENGTH_SHORT).show();
+                            Intent se = new Intent(UserLogIn.this, Dashboard.class);
+                            startActivity(se);
 
                         }
                     }
@@ -136,6 +138,8 @@ public class UserLogIn extends AppCompatActivity {
                         btn_login.setVisibility(View.VISIBLE);
                         Toast.makeText(UserLogIn.this, "Error"+ error.toString(),
                                 Toast.LENGTH_SHORT).show();
+                        Intent se = new Intent(UserLogIn.this, Dashboard.class);
+                        startActivity(se);
                     }
                 }
         )

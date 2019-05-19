@@ -1,9 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserSignUp">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:id="@+id/liner_layout"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="0dp"
+            android:background="#30D5C8">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:src="@drawable/insulin_icon"
+                tools:ignore="ContentDescription" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="User Registration"
+            android:layout_gravity="center"
+            android:textColor="#333333"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:id="@+id/f_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText,RtlCompat,RtlHardcoded,RtlSymmetry,UnusedAttribute" />
+
+            <ImageView
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                android:layout_marginStart="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/l_name"
+                android:hint="Last Name"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry,UnusedAttribute"
+                />
+
+            <ImageView
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                android:layout_marginStart="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:id="@+id/email"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                android:background="@null"
+                android:importantForAutofill="no"
+                tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute" />
+
+            <ImageView
+                android:src="@drawable/ic_email_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                android:layout_marginStart="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:id="@+id/dob"
+                android:hint="Date of Birth"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                android:background="@null"
+                android:importantForAutofill="no"
+                tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute" />
+
+            <ImageView
+                android:src="@drawable/ic_work_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                android:layout_marginStart="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/ic_lock_outline_black_24dp"
+                tools:ignore="ContentDescription" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:id="@+id/bloog_Grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="Blood Group"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/baseline_favorite_border_black_18dp"
+                tools:ignore="ContentDescription" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border_roundedcurve"
+            >
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="Phone"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:paddingLeft="48dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#555555"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/baseline_settings_cell_black_24dp"
+                tools:ignore="ContentDescription" />
+
+
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/loading"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/layoutpassword"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginTop="6dp"
+            android:text="Register"
+            android:background="@drawable/blue_fill__rounded_color"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
