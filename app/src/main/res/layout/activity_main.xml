@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30D5C8	"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/insulin_icon"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        tools:ignore="ContentDescription" />
+    <Button
+    android:id="@+id/btn_usrLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:textColor="#333333"
+    android:textStyle="bold"
+        android:layout_below="@+id/logo"
+    android:gravity="center"
+    android:paddingTop="12dp"
+    android:paddingBottom="14dp"
+    android:layout_marginLeft="62dp"
+    android:layout_marginRight="62dp"
+    android:layout_marginTop="18.7dp"
+    android:text="User Login"
+    android:background="@drawable/round_button"
+    tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btn_dctLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@id/btn_usrLogin"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="14dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="18.7dp"
+        android:text="Doctor Login"
+        android:background="@drawable/round_button"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+    <Button
+        android:id="@+id/btn_usrSgnUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_dctLogin"
+        android:gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="18.7dp"
+        android:text="User Sign Up"
+        android:background="@drawable/round_button"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+    <Button
+        android:id="@+id/btn_dctSgnUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/btn_usrSgnUp"
+        android:paddingTop="12dp"
+        android:paddingBottom="14dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="18.7dp"
+        android:text="User Sign Up"
+        android:background="@drawable/round_button"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+
+
+
+</RelativeLayout>
